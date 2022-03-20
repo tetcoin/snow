@@ -56,6 +56,9 @@ ring = { version = "^0.16.2", optional = true, features = ["std"] }
 sodiumoxide = { version = "0.2", optional = true }
 byteorder = { version = "1.3", optional = true }
 
+[patch.crates-io]
+aes-gcm = { git = 'https://github.com/tetcoin/AEADs', branch = 'tet-hotfix-aesni' }
+
 [dev-dependencies]
 clap = "2"
 criterion = "0.3"
